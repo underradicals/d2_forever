@@ -1,0 +1,19 @@
+[project]
+name = "destiny2-manifest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "debugpy>=1.8.21",
+    "httpx[http2]>=0.28.1",
+    "loguru>=0.7.3",
+    "orjson>=3.11.9",
+    "pika>=1.4.1",
+    "polars>=1.42.1",
+    "psycopg[binary,pool]>=3.3.4",
+    "pybreaker>=1.4.1",
+    "pytest>=9.1.1",
+    "redis[hiredis]>=8.0.1",
+    "tenacity>=9.1.4",
+]

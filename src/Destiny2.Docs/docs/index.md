@@ -1441,3 +1441,46 @@ if __name__ == "__main__":
     run(main())
 
 ```
+
+### Last Commit for branch `(add_docs)`
+```bash
+Updating f6cb786..ac1d484
+Fast-forward
+ Destiny2.slnx                                      |     6 +
+ .../.vitepress/cache/deps/_metadata.json           |    32 +
+ .../.vitepress/cache/deps/package.json             |     3 +
+ .../cache/deps/vitepress_n_@vue_devtools-api.js    |  3814 +++++++
+ .../deps/vitepress_n_@vue_devtools-api.js.map      |     1 +
+ .../cache/deps/vitepress_n_@vueuse_core.js         | 10007 +++++++++++++++++++
+ .../cache/deps/vitepress_n_@vueuse_core.js.map     |     1 +
+ src/Destiny2.Docs/.vitepress/cache/deps/vue.js     |     2 +
+ .../cache/deps/vue.runtime.esm-bundler-DJa8Dn_V.js |  8671 ++++++++++++++++
+ .../deps/vue.runtime.esm-bundler-DJa8Dn_V.js.map   |     1 +
+ src/Destiny2.Docs/.vitepress/config.mts            |    26 +
+ src/Destiny2.Docs/.vitepress/theme/index.ts        |    17 +
+ src/Destiny2.Docs/.vitepress/theme/style.css       |   139 +
+ src/Destiny2.Docs/.vscode/settings.json            |     7 +
+ src/Destiny2.Docs/Class1.cs                        |     6 +
+ src/Destiny2.Docs/Destiny2.Docs.csproj             |     9 +
+ src/Destiny2.Docs/api-examples.md                  |    49 +
+ src/Destiny2.Docs/docs/index.md                    |  1443 +++
+ src/Destiny2.Docs/index.md                         |    24 +
+ src/Destiny2.Docs/markdown-examples.md             |    85 +
+ src/Destiny2.Docs/package-lock.json                |  2012 ++++
+ src/Destiny2.Docs/package.json                     |    13 +
+ src/Destiny2.Manifest/.idea/.gitignore             |    10 +
+ src/Destiny2.Manifest/.idea/dataSources.xml        |    12 +
+ src/Destiny2.Manifest/.idea/destiny2-manifest.iml  |    10 +
+ .../.idea/inspectionProfiles/Project_Default.xml   |    53 +
+ .../.idea/inspectionProfiles/profiles_settings.xml |     6 +
+ src/Destiny2.Manifest/.idea/modules.xml            |     8 +
+ src/Destiny2.Manifest/.idea/vcs.xml                |     6 +
+ src/Destiny2.Manifest/.python-version              |     1 +
+ src/Destiny2.Manifest/Destiny2.Manifest.csproj     |     9 +
+ src/Destiny2.Manifest/README.md                    |     0
+ src/Destiny2.Manifest/assets/manifest.json         |     1 +
+ src/Destiny2.Manifest/main.py                      |    53 +
+ src/Destiny2.Manifest/pyproject.toml               |    19 +
+ src/Destiny2.Manifest/uv.lock                      |   577 ++
+ 36 files changed, 27133 insertions(+)
+```

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Destiny2.Docs/Destiny2.Docs.csproj" />
+    <Project Path="src/Destiny2.Manifest/Destiny2.Manifest.csproj" />
+  </Folder>
+</Solution>

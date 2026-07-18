@@ -15,7 +15,8 @@ export default defineConfig({
       {
         text: "Examples",
         items: [
-          { text: "Project Setup", link: "/docs/index" },
+          { text: "Acquire Manifest Data", link: "/docs/index" },
+          { text: "Acquire JWCCP Data ", link: "/docs/jwccp" },
           { text: "Runtime API Examples", link: "/api-examples" },
         ],
       },

@@ -1,0 +1,14 @@
+[project]
+name = "destiny2-normalization"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "ijson>=3.5.1",
+    "loguru>=0.7.3",
+    "numpy>=2.4.6",
+    "orjson>=3.11.9",
+    "polars>=1.42.1",
+    "psycopg[binary]>=3.3.4",
+    "pydantic>=2.13.4",
+    "pyrefly>=0.60.0",
+]

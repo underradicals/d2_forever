@@ -7,7 +7,7 @@ from loguru import logger
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 ROOT = "G:\\"
-ASSETS = join(ROOT, "Assets")
+ASSETS = join(ROOT, "Assets_Dev")
 MANIFEST_PATH = join(ASSETS, "manifest.json")
 
 

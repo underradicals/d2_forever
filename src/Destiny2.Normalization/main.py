@@ -1,16 +1,15 @@
 from asyncio import run
-from csv import reader, writer
 from collections import deque
+from csv import reader, writer
 from os import makedirs
+from os.path import join
 from pathlib import Path
 from time import perf_counter
-from typing import Mapping
-from typing import Any
-from os.path import join
+from typing import Any, Mapping
 
 from ijson import kvitems
-from orjson import dumps
 from loguru import logger
+from orjson import OPT_INDENT_2, dumps, loads
 
 ROOT = "G:\\Assets_Dev"
 DATA = join(ROOT, "Data")
@@ -128,9 +127,27 @@ def create_inventory_csv():
         logger.info("Total Time {:.2f}s", end_time - start_time)
 
 
+def process_weapon(old_data: dict):
+    return {
+        "name": old_data.get("displayProperties", {}).get("name"),
+        "icon": old_data.get("displayProperties", {}).get("icon"),
+        "iconWatermark": old_data.get("iconWatermark"),
+    }
+
+
 async def main():
-    create_directories()
-    create_inventory_csv()
+    # create_directories()
+    # create_inventory_csv()
+    with (
+        open(join(DATA, "weapons.csv"), "r", encoding="UTF-8") as f,
+        open(join(DATA, "weapons.jsonl"), "w", encoding="UTF-8") as w,
+    ):
+        weapon_reader = reader(f, delimiter=",", doublequote=True)
+        for k, v in weapon_reader:
+            if k == "id":
+                continue
+            weapon_json = loads(v)
+            w.write(dumps(process_weapon(weapon_json)).decode("UTF-8") + "\n")
 
 
 if __name__ == "__main__":

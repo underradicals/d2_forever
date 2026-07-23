@@ -4,5 +4,6 @@
     <Project Path="src/Destiny2.Manifest/Destiny2.Manifest.csproj" />
     <Project Path="src/Destiny2.Normalization/Destiny2.Normalization.csproj" />
     <Project Path="src/Destiny2.Jwccp/Destiny2.Jwccp.csproj" />
+    <Project Path="src/Destiny2.CliTool/Destiny2.CliTool.csproj" />
   </Folder>
 </Solution>

@@ -12,3 +12,5 @@ dependencies = [
     "pydantic>=2.13.4",
     "pyrefly>=0.60.0",
 ]
+[tool.ruff]
+line-length = 200
